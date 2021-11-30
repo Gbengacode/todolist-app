@@ -85,6 +85,7 @@ i {
 
 .container > .clear > p {
   text-align: center;
+  color: #181616;
 }
 
 .container > .clear > p:hover {
