@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open",
@@ -18,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/Gbengacode/todolist-list-structure/issues"
   },
-  "homepage": "https://github.com/Gbengacode/todolist-list-structure#readme",
+  "homepage": "https://github.com/Gbengacode/todolist-list-structure/distil",
   "devDependencies": {
     "css-loader": "^6.5.1",
     "html-webpack-plugin": "^5.5.0",

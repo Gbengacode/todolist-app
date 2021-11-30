@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-[View Live Demo Site](https://gbengacode.github.io/todolist-list-structure/)
+[View Live Demo Site](https://gbengacode.github.io/todolist-list-structure/distil)
 
 
 
