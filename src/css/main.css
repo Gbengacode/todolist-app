@@ -1,0 +1,92 @@
+/* stylesheet */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: rgb(139, 143, 192);
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  background: #fff;
+  max-width: 600px;
+  display: grid;
+  grid-template-rows: 1fr;
+  margin: 100px auto;
+  border-radius: 16px;
+  box-shadow: rgb(100 100 139 / 20%) 0 7px 29px 0;
+}
+
+.container > .sub-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container > .sub-container h1 {
+  font-size: 16px;
+  padding: 15px;
+  color: #181616;
+}
+
+input {
+  width: 100%;
+  overflow: auto;
+  padding: 15px;
+  border: 1px solid #dfe1e6;
+}
+
+input::placeholder {
+  font-size: 15px;
+  font-style: italic;
+}
+
+.container > ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container > ul > li {
+  display: flex;
+  justify-content: space-between;
+  color: #181616;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: #dfe1e6;
+}
+
+i {
+  padding: 20px;
+  color: #7c7272;
+}
+
+.container > .clear {
+  padding: 20px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  background: #dfe1e6;
+  cursor: pointer;
+}
+
+.container > .clear:hover {
+  text-decoration: underline;
+  background: #b6bac4;
+}
