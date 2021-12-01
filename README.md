@@ -10,12 +10,7 @@
 - Frameworks (None)
 - Technologies used - Webpack(Code Bundlng et al), Git(version control), ESLint(JavaScript linting), WebHint(linting tool), Stylelint(style linting)
 
-
-## Live Demo
-
-[View Live Demo Site](https://gbengacode.github.io/todolist-list-structure/distil)
-
-
+ 
 
 ## Getting Started
 
