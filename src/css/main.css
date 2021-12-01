@@ -78,17 +78,15 @@ i {
 }
 
 .container > .clear {
+  padding: 20px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  border: none;
   background: #dfe1e6;
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
-}
-
-.container > .clear > p {
-  text-align: center;
-  color: #181616;
-}
-
-.container > .clear > p:hover {
-  text-decoration: underline;
   cursor: pointer;
+}
+
+.container > .clear:hover {
+  text-decoration: underline;
+  background: #b6bac4;
 }

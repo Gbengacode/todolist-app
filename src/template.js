@@ -5,9 +5,7 @@ export default (Items, container, ul) => {
 
   container.appendChild(ul);
   container.innerHTML += `
-  
-  <div class="clear"><p>Clear all completed</p></div>
-      
+    <button type="button" class="clear">Clear all completed </button>
       
   `;
 };
