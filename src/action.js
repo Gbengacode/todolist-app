@@ -78,9 +78,20 @@ export const editItem = () => {
             store.splice(i, 1);
           }
         }
-
-        localStorage.setItem('items', JSON.stringify(store));
+        const ul = document.querySelector('ul');
         li.parentElement.removeChild(li);
+        const reset = store.map((list, index) => {
+          list.index = index + 1;
+          return list;
+        });
+
+        localStorage.setItem('items', JSON.stringify(reset));
+        const newItem = JSON.parse(localStorage.getItem('items'));
+        ul.innerHTML = '';
+        newItem.forEach((item) => {
+          ul.innerHTML += `<li><span><i class="far fa-square check " data-id=${item.index}></i><p>${item.description}</p> </span> <i class="fa fa-ellipsis-v dot" aria-hidden="true"></i></li>`;
+        });
+        window.location.reload();
       });
     });
   });
@@ -115,11 +126,16 @@ export const clearItems = () => {
   clear.addEventListener('click', () => {
     const store = JSON.parse(localStorage.getItem('items'));
     const items = store.filter((s) => s.completed !== true);
+    const newItems = items.map((list, index) => {
+      list.index = index + 1;
+      return list;
+    });
+
     ul.innerHTML = '';
     items.forEach((item) => {
       ul.innerHTML += `<li><span><i class="far fa-square check " data-id=${item.index}></i><p>${item.description}</p> </span> <i class="fa fa-ellipsis-v dot" aria-hidden="true"></i></li>`;
     });
-    localStorage.setItem('items', JSON.stringify(items));
+    localStorage.setItem('items', JSON.stringify(newItems));
     saveUpdate();
     editItem();
   });
