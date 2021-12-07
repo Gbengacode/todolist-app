@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "homepage": "https://github.com/Gbengacode/todolist-list-structure/distil",
+  "type": "module",
   "scripts": {
     "test": "jest",
     "start": "webpack serve --open",

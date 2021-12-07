@@ -118,6 +118,8 @@ export const addItem = (ul, container, button) => {
     saveUpdate();
     editItem();
   });
+
+  return 1;
 };
 
 export const clearItems = () => {
