@@ -26,7 +26,7 @@ container.appendChild(form);
 container.appendChild(ul);
 template(Items, container, ul, button, p);
 fetchItems(Items);
-addItem(ul, container, button);
 saveUpdate();
 editItem();
 clearItems();
+addItem(form, ul, container, button);

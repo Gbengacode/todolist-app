@@ -97,29 +97,26 @@ export const editItem = () => {
   });
 };
 
-export const addItem = (ul, container, button) => {
-  window.addEventListener('submit', (e) => {
+export const addItem = (form, ul, container, button) => {
+  form.addEventListener("submit", (e) => {
     e.preventDefault();
-    const form = new FormData(e.target);
-    const item = form.get('item');
-    if (item.trim() === '') return;
-    const Items = JSON.parse(localStorage.getItem('items'));
+    const item = form.elements[0].value;
+    if (item.trim() === "") return;
+    const Items = JSON.parse(localStorage.getItem("items")) || [];
     const itemObj = {
       description: item,
       completed: false,
       index: Items.length + 1,
     };
     Items.push(itemObj);
-    const input = document.querySelector('input');
-    input.value = '';
+    const input = document.querySelector("input");
+    input.value = "";
     ul.innerHTML += `<li><span><i class="far fa-square check " data-id=${itemObj.index}></i><p>${itemObj.description}</p> </span> <i class="fa fa-ellipsis-v dot" aria-hidden="true"></i></li>`;
     container.appendChild(button);
-    localStorage.setItem('items', JSON.stringify(Items));
+    localStorage.setItem("items", JSON.stringify(Items));
     saveUpdate();
     editItem();
   });
-
-  return 1;
 };
 
 export const clearItems = () => {
