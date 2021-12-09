@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "homepage": "https://github.com/Gbengacode/todolist-list-structure/distil",
-  "type": "module",
+  
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "start": "webpack serve --open",
     "build": "webpack"
   },
@@ -21,6 +21,7 @@
     "url": "https://github.com/Gbengacode/todolist-list-structure/issues"
   },
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.16.0",
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.5.1",
     "eslint": "^7.32.0",
