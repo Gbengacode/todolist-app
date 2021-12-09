@@ -1,14 +1,14 @@
 
 # Project Name
- To do list Application
+ To do list Application Jest Testing
 
- ![screenshot](./screenshot/screen.png)
+ ![screenshot](./screenshot/testingpic.png)
 
 ## Built With
 
 - Major languages (HTML, CSS, JavaScript)
 - Frameworks (None)
-- Technologies used - Webpack(Code Bundlng et al), Git(version control), ESLint(JavaScript linting), WebHint(linting tool), Stylelint(style linting)
+- Technologies used - Webpack(Code Bundlng et al), Git(version control), ESLint(JavaScript linting), WebHint(linting tool), Stylelint(style linting), Jest testing tool
 
  
  ## Live Demo
@@ -37,7 +37,12 @@ To get a local copy up and running follow these simple example steps.
 [Github](https://github.com/gbengacode)
 [Linkedin](https://www.linkedin.com/in/emmanuel-gbenga/)
 
+👤 **Ranjeet Singh**
 
+- GitHub: [@githubhandle](https://github.com/thecodechaser) 
+- Twitter: [@twitterhandle](https://twitter.com/thecodechaser) 
+- LinkedIn: [LinkedIn](https://linkedin.com/in/thecodechaser) 
+  
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
@@ -45,3 +50,4 @@ Contributions, issues, and feature requests are welcome!
 
 
 ## Acknowledgments
+coding partner

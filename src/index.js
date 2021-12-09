@@ -7,6 +7,7 @@ import {
   addItem,
   editItem,
   clearItems,
+  deleteItem,
 } from './action.js';
 
 const container = document.querySelector('.container');
@@ -26,7 +27,11 @@ container.appendChild(form);
 container.appendChild(ul);
 template(Items, container, ul, button, p);
 fetchItems(Items);
-addItem(ul, container, button);
+deleteItem();
 saveUpdate();
-editItem();
+editItem(ul);
 clearItems();
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  addItem(form, ul, container, button);
+});
