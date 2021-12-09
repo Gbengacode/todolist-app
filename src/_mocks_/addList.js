@@ -2,7 +2,7 @@ import localStorageMock from './store.js';
 
 export default (tasks) => {
   const newTask = {
-    description: document.getElementById('addTask').value,
+    description: document.getElementById('addList').value,
     completed: false,
     index: tasks.length + 1,
   };

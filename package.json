@@ -6,7 +6,7 @@
   "homepage": "https://github.com/Gbengacode/todolist-list-structure/distil",
   
   "scripts": {
-    "test": "jest --coverage",
+    "test": "jest --env=jsdom --coverage",
     "start": "webpack serve --open",
     "build": "webpack"
   },

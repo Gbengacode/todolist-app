@@ -2,7 +2,7 @@
 # Project Name
  To do list Application Jest Testing
 
- ![screenshot](./screenshot/testingpic.png)
+ ![screenshot](./screenshot/testingpic2.png)
 
 ## Built With
 
