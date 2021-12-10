@@ -1,6 +1,6 @@
-import deleteItem from '../_mocks_/removeList.js';
+import removeItem from '../_mocks_/removeList.js';
 
-describe('remove a task from the list', () => {
+describe('remove a item from the list', () => {
   const list = [
     {
       description: 'first ittem',
@@ -19,7 +19,7 @@ describe('remove a task from the list', () => {
     },
   ];
   test('remove an item from the list', () => {
-    const todo = list[1];
-    expect(deleteItem(todo, list)).toHaveLength(2);
+    const { index } = list[1];
+    expect(removeItem(index, list)).toHaveLength(2);
   });
 });

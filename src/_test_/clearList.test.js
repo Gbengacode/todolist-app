@@ -13,7 +13,7 @@ describe('clear  completed to do list', () => {
       index: 2,
     },
     {
-      description: 'edit',
+      description: 'edited',
       status: true,
       index: 3,
     },

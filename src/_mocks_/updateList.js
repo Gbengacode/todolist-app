@@ -1,4 +1,4 @@
-import localStorageMock from './store.js';
+import localStorage from './store.js';
 
 export default (id, list, value) => {
   const currentList = list.map((item) => {
@@ -8,6 +8,6 @@ export default (id, list, value) => {
     return item;
   });
 
-  localStorageMock.setItem('todo', currentList);
+  localStorage.setItem('todo', JSON.stringify(currentList));
   return currentList[id - 1].description;
 };
