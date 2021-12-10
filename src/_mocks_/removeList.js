@@ -1,11 +1,10 @@
-import localStorageMock from './store.js';
+import localStorage from './store.js';
 
-export default (todo, tasks) => {
-  const { index } = todo;
-  const currentTasks = tasks.filter((todo) => todo.index !== index);
-  tasks.forEach((object, index) => {
-    object.index = index + 1;
+export default (index, list) => {
+  const currentList = list.filter((list) => list.index !== index);
+  list.forEach((item, index) => {
+    item.index = index + 1;
   });
-  localStorageMock.setItem('todo', currentTasks);
-  return currentTasks;
+  localStorage.setItem('todo', JSON.stringify(currentList));
+  return currentList;
 };

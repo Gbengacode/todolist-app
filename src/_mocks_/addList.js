@@ -1,11 +1,11 @@
-import localStorageMock from './store.js';
+import localStorage from './store.js';
 
-export default (tasks) => {
-  const newTask = {
-    description: document.getElementById('addList').value,
+export default (list, item) => {
+  const newItem = {
+    description: item,
     completed: false,
-    index: tasks.length + 1,
+    index: list.length + 1,
   };
-  tasks.push(newTask);
-  localStorageMock.setItem('todo', tasks);
+  list.push(newItem);
+  localStorage.setItem('todo', JSON.stringify(list));
 };

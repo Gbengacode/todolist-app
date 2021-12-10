@@ -1,10 +1,8 @@
 const storage = [];
 
-const localStorageMock = {
+export default {
   getItem: (key) => storage[key],
   setItem: (key, value) => {
     storage[key] = value;
   },
 };
-
-export default localStorageMock;

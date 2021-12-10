@@ -8,6 +8,6 @@ export default (id, list, status) => {
     return item;
   });
 
-  localStorageMock.setItem('todo', currentList);
+  localStorageMock.setItem('todo', JSON.stringify(currentList));
   return currentList[id - 1].status;
 };
